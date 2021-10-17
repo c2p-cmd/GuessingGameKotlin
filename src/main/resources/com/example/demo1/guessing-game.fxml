@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.HelloController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="398.0" minWidth="10.0" prefWidth="391.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="209.0" />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="confirmButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="203.0" text="Confirm" GridPane.columnIndex="1"  GridPane.rowIndex="1" >
+          <font>
+              <Font name="Droid Sans" size="16.5"/>
+          </font>
+      </Button>
+      <Label fx:id="promptLabel" alignment="CENTER" prefHeight="135.0" prefWidth="391.0" text="Enter number and confirm number." textAlignment="CENTER">
+         <font>
+            <Font name="Droid Sans" size="18.0" />
+         </font></Label>
+      <Label fx:id="attemptsCounterLabel" alignment="CENTER" prefHeight="131.0" prefWidth="203.0" text="0" GridPane.columnIndex="1" >
+          <font>
+              <Font name="Droid Sans" size="18.0"/>
+          </font>
+      </Label>
+      <Label fx:id="hintLabel" prefHeight="95.0" prefWidth="401.0" textAlignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font name="Droid Sans Mono" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <TextField fx:id="numberInputField" prefHeight="58.0" prefWidth="391.0" GridPane.rowIndex="1" >
+          <font>
+              <Font name="Droid Sans Mono" size="16.5" />
+          </font>
+      </TextField>
+      <Button fx:id="resetButton" mnemonicParsing="false" prefHeight="57.0" prefWidth="203.0" text="Reset" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+          <font>
+              <Font name="Droid Sans" size="16.5"/>
+          </font>
+      </Button>
+   </children>
+</GridPane>
